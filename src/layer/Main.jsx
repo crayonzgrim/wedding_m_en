@@ -2,24 +2,24 @@ export const Main = () => {
   return (
     <div>
       <div className="mt-[100px] flex h-[2.5rem] w-full items-center justify-center bg-[url('/tile.png')] bg-center bg-no-repeat">
-        <div className="flex items-center justify-between gap-6">
-          <p>결</p>
-          <p>혼</p>
-          <p>합</p>
-          <p>니</p>
-          <p>다</p>
+        <div className="flex items-center justify-between gap-[28px] text-sm">
+          <p>B</p>
+          <p>L</p>
+          <p>E</p>
+          <p>S</p>
+          <p>S</p>
         </div>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-5 mt-10">
         <div>
           <p className="text-sm text-[#564E47] text-center">Groom</p>
-          <p className="text-2xl text-[#564E47]">KIM DONG IL</p>
+          <p className="text-xl text-[#564E47]">KIM DONG IL</p>
         </div>
         <img src={"./notice-heart.png"} alt={"heart"} width={18} />
         <div>
           <p className="text-sm text-[#564E47] text-center">Bride</p>
-          <p className="text-2xl text-[#564E47]">Elliott Kiana Marie</p>
+          <p className="text-xl text-[#564E47]">Elliott Kiana Marie</p>
         </div>
       </div>
 

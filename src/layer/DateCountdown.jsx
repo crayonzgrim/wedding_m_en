@@ -1,9 +1,6 @@
 export const DateCountdown = () => {
   return (
-    <div
-      className="relative mt-[123px] flex flex-col items-center justify-center"
-      style={{ border: "1px dashed red" }}
-    >
+    <div className="relative mt-[123px] flex flex-col items-center justify-center">
       <div className="bg-[url('./bg_greeting.png')] h-full w-full">
         <div>
           <p>2024년</p>

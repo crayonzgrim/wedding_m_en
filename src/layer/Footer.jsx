@@ -1,10 +1,19 @@
 export const Footer = () => {
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+
+    alert("You can share it now!");
+  };
+
   return (
-    <div className="flex h-[88px] w-full flex-col items-center justify-center gap-2 bg-[url('/bg_footer.png')]">
-      <div>
+    <div className="flex h-[88px] w-full flex-col items-center justify-center bg-[url('/bg_footer.png')]">
+      <button
+        onClick={handleCopyLink}
+        className="flex items-center justify-center flex-col gap-1 mt-2"
+      >
         <img src={"/share-url.png"} alt={"share-url"} width={20} />
-      </div>
-      <div>링크 복사</div>
+        <p>Share this link</p>
+      </button>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import { Accordion } from "../components/Accordion";
+
 export const Events = () => {
   return (
     <div className="mb-[65px] mt-[120px] flex flex-col items-center justify-center">
@@ -6,29 +8,31 @@ export const Events = () => {
       </div>
 
       <div className="mt-[60px]">
-        <p className="text-center">참석이 어려우신 분들은</p>
-        <p className="text-center">축하의 마음을 전해주세요.</p>
+        <p className="text-center">For those who can&apos;t attend</p>
+        <p className="text-center"> Please convey your congratulations.</p>
       </div>
 
-      <div className="my-[60px]">Drawer</div>
+      <div className="my-[60px] w-full">
+        <Accordion />
+      </div>
 
-      <div className="flex items-center justify-center ">
+      <div className="flex items-center justify-center w-full">
         {contactData.map(({ id, name, phone, sms }) => {
           return (
             <div
               key={id}
-              className={`${id === "broom" ? "rounded-bl-lg rounded-tl-lg border-2 border-r-0" : "rounded-br-lg rounded-tr-lg border-2"}  border-[#FFE0D2] bg-white px-5 py-1`}
+              className={`${id === "groom" ? "rounded-bl-lg rounded-tl-lg border-2 border-r-0" : "rounded-br-lg rounded-tr-lg border-2"} border-[#FFE0D2] bg-white p-5 w-full`}
             >
-              <div className="mb-2 flex flex-col items-center gap-2">
-                <p>{id}</p>
+              <div className="mb-2 flex flex-col items-center">
+                <p className="uppercase text-sm">{id}</p>
                 <p>{name}</p>
               </div>
-              <div className="flex items-center justify-center gap-2">
-                <a href="tel:01052060296">
-                  <img src={"/phone.png"} alt={"call"} width={45} />
+              <div className="flex items-center justify-between px-7">
+                <a href={`tel:${phone}`}>
+                  <img src={"/phone.png"} alt={"call"} width={38} />
                 </a>
-                <a href="sms:01052060296">
-                  <img src={"/sms.png"} alt={"sms"} width={45} />
+                <a href={`sms:${sms}`}>
+                  <img src={"/sms.png"} alt={"sms"} width={38} />
                 </a>
               </div>
             </div>
@@ -41,7 +45,7 @@ export const Events = () => {
 
 const contactData = [
   {
-    id: "broom",
+    id: "groom",
     name: "KIM DONG IL",
     phone: "01052060296",
     sms: "01052060296",
