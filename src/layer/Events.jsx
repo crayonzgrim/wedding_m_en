@@ -8,8 +8,13 @@ export const Events = () => {
       </div>
 
       <div className="mt-[60px]">
-        <p className="text-center">For those who can&apos;t attend</p>
-        <p className="text-center"> Please convey your congratulations.</p>
+        <p className="text-center text-sm">
+          Your presence at our wedding is the greatest gift of all.
+        </p>
+        <p className="text-center text-sm">
+          However, if you wish to give a gift, we will gratefully accept a small
+          contribution towards our new life together.
+        </p>
       </div>
 
       <div className="my-[60px] w-full">
@@ -23,9 +28,9 @@ export const Events = () => {
               key={id}
               className={`${id === "groom" ? "rounded-bl-lg rounded-tl-lg border-2 border-r-0" : "rounded-br-lg rounded-tr-lg border-2"} border-[#FFE0D2] bg-white p-5 w-full`}
             >
-              <div className="mb-2 flex flex-col items-center">
-                <p className="uppercase text-sm">{id}</p>
-                <p>{name}</p>
+              <div className="mb-4 flex flex-col items-center">
+                <p className="uppercase text-xs">{id}</p>
+                <p className="text-sm">{name}</p>
               </div>
               <div className="flex items-center justify-between px-7">
                 <a href={`tel:${phone}`}>
@@ -46,13 +51,13 @@ export const Events = () => {
 const contactData = [
   {
     id: "groom",
-    name: "KIM DONG IL",
+    name: "DONG IL KIM",
     phone: "01052060296",
     sms: "01052060296",
   },
   {
     id: "bride",
-    name: "Elliott Kiana Marie",
+    name: "KIANA MARIE ELLIOTT",
     phone: "01096570770",
     sms: "01096570770",
   },

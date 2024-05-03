@@ -3,25 +3,25 @@ import React, { useState } from "react";
 const datas = [
   {
     id: 1,
-    title: "신랑측 계좌번호",
+    title: "To the groom",
     content: [
       {
         id: 1,
-        bank: "헬로우은행",
-        account: "1234-5678-91234",
-        content: "헬로우월드",
+        bank: "신한은행(Shinhan Bank)",
+        account: "110-457-228541",
+        content: "김동일",
       },
     ],
   },
   {
     id: 2,
-    title: "신부측 계좌번호",
+    title: "To the bride",
     content: [
       {
         id: 2,
-        bank: "월드은행",
-        account: "11111-2222-3333",
-        content: "wowmom",
+        bank: "신한은행(Shinhan Bank)",
+        account: "110-468-117006",
+        content: "Elliott Kiana Marie",
       },
     ],
   },
@@ -85,14 +85,14 @@ export const Accordion = () => {
                   <React.Fragment key={id}>
                     <div>
                       <p className="mb-2">예금주 : {content}</p>
-                      <span>{bank}</span>
+                      <span>{bank} : </span>
                       <span className="text-[#666464]">{account}</span>
                     </div>
                     <button
                       className="bg-[#666464] text-white px-2 py-1 rounded-full text-[10px]"
                       onClick={handleCopy(account)}
                     >
-                      복사하기
+                      Copy
                     </button>
                   </React.Fragment>
                 ))}

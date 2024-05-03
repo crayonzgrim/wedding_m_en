@@ -14,12 +14,12 @@ export const Main = () => {
       <div className="flex flex-col items-center justify-center gap-5 mt-10">
         <div>
           <p className="text-sm text-[#564E47] text-center">Groom</p>
-          <p className="text-xl text-[#564E47]">KIM DONG IL</p>
+          <p className="text-xl text-[#564E47]">DONG IL KIM</p>
         </div>
         <img src={"./notice-heart.png"} alt={"heart"} width={18} />
         <div>
           <p className="text-sm text-[#564E47] text-center">Bride</p>
-          <p className="text-xl text-[#564E47]">Elliott Kiana Marie</p>
+          <p className="text-xl text-[#564E47]">KIANA MARIE ELLIOTT</p>
         </div>
       </div>
 
