@@ -5,7 +5,7 @@ export const HowToCome = () => {
       <div className="mb-[60px] mt-[27px] h-[1px] w-[10px] bg-[#221815]" />
 
       <div className="flex flex-col items-center justify-center">
-        <p>Grand Ballroom Hall</p>
+        <p className="font-semibold">Grand Ballroom Hall</p>
         <p>Daegu Exco Interbulgo</p>
         <p>80, Distribution Complex-ro, Buk-gu, Daegu</p>
       </div>
@@ -17,7 +17,7 @@ export const HowToCome = () => {
       {/* </div> */}
 
       <div className="mt-[35px]">
-        <img src={"./map.png"} alt={"map"} />
+        <img src={"./map.jpeg"} alt={"map"} />
       </div>
     </div>
   );

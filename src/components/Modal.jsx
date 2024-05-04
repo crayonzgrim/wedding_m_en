@@ -2,14 +2,14 @@ export const Modal = (props) => {
   const { src, alt, onClose } = props;
 
   return (
-    <div className="overflow-y-auto overflow-x-hidden fixed top-[50%] right-[50%] translate-x-[50%] translate-y-[-35%] justify-center items-center w-full max-w-[385px] h-full max-h-full z-10">
+    <div className="overflow-y-auto overflow-x-hidden fixed top-[40%] right-[50%] translate-x-[50%] translate-y-[-35%] justify-center items-center w-full max-w-[385px] h-full max-h-full z-10">
       <div className="relative p-4 w-full max-w-2xl max-h-full">
         {/* <!-- Modal content --> */}
         <div className="relative bg-white rounded-lg shadow">
           {/* <!-- Modal header --> */}
           <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-              Static modal
+              Wedding picture {alt.split("_")[1]}
             </h3>
             <button
               type="button"

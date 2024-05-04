@@ -7,14 +7,12 @@ export const Events = () => {
         <img src={"/leaf.png"} alt={"leaf"} width={13} />
       </div>
 
-      <div className="mt-[60px]">
-        <p className="text-center text-sm">
-          Your presence at our wedding is the greatest gift of all.
-        </p>
-        <p className="text-center text-sm">
-          However, if you wish to give a gift, we will gratefully accept a small
-          contribution towards our new life together.
-        </p>
+      <div className="mt-[60px] text-center text-sm">
+        <p className="">Your presence at our wedding is</p>
+        <p className="">the greatest gift of all.</p>
+        <p className="">However, if you wish to give a gift,</p>
+        <p className="">we will gratefully accept a small</p>
+        <p>contribution towards our new life together. </p>
       </div>
 
       <div className="my-[60px] w-full">
@@ -30,7 +28,7 @@ export const Events = () => {
             >
               <div className="mb-4 flex flex-col items-center">
                 <p className="uppercase text-xs">{id}</p>
-                <p className="text-sm">{name}</p>
+                <p className="">{name}</p>
               </div>
               <div className="flex items-center justify-between px-7">
                 <a href={`tel:${phone}`}>
@@ -51,13 +49,13 @@ export const Events = () => {
 const contactData = [
   {
     id: "groom",
-    name: "DONG IL KIM",
+    name: "Dong il",
     phone: "01052060296",
     sms: "01052060296",
   },
   {
     id: "bride",
-    name: "KIANA MARIE ELLIOTT",
+    name: "Kiana",
     phone: "01096570770",
     sms: "01096570770",
   },
