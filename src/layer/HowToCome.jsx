@@ -1,10 +1,10 @@
 export const HowToCome = () => {
   return (
     <div className="mt-[120px] flex flex-col items-center justify-center">
-      <h3 className="text-md text-[#221815]">Wedding Hall</h3>
+      <h3 className="text-md text-[#221815] font-nothing">Wedding Hall</h3>
       <div className="mb-[60px] mt-[27px] h-[1px] w-[10px] bg-[#221815]" />
 
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center font-crimson">
         <p className="font-semibold">Grand Ballroom Hall</p>
         <p>Daegu Exco Interbulgo</p>
         <p>80, Distribution Complex-ro, Buk-gu, Daegu</p>

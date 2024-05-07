@@ -1,4 +1,3 @@
-export * from "./DateCountdown";
 export * from "./Events";
 export * from "./Extra";
 export * from "./Footer";

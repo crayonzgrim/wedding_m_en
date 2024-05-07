@@ -7,7 +7,7 @@ const datas = [
     content: [
       {
         id: 1,
-        bank: "신한은행(Shinhan Bank)",
+        bank: "신한은행 (Shinhan Bank)",
         account: "110-457-228541",
         content: "김동일",
       },
@@ -19,7 +19,7 @@ const datas = [
     content: [
       {
         id: 2,
-        bank: "신한은행(Shinhan Bank)",
+        bank: "신한은행 (Shinhan Bank)",
         account: "110-468-117006",
         content: "Elliott Kiana Marie",
       },
@@ -65,7 +65,7 @@ export const Accordion = () => {
             >
               <p
                 id={data.id}
-                className="flex-1 flex items-center justify-center h-full ml-8"
+                className="flex-1 flex items-center justify-center h-full ml-8 font-montserrat"
               >
                 {data.title}
               </p>
@@ -84,9 +84,9 @@ export const Accordion = () => {
                 {data.content.map(({ id, content, bank, account }) => (
                   <React.Fragment key={id}>
                     <div>
-                      <p className="mb-2">예금주 : {content}</p>
-                      <span>{bank} : </span>
-                      <span className="text-[#666464]">{account}</span>
+                      <p className="mb-2">{bank}</p>
+                      <p className="mb-2 text-sm">Account holder : {content}</p>
+                      {/* <span className="text-[#666464]">{account}</span> */}
                     </div>
                     <button
                       className="bg-[#666464] text-white px-2 py-1 rounded-full text-[10px]"

@@ -14,7 +14,7 @@ export const Gallery = () => {
 
   return (
     <div className="flex flex-col items-center justify-center mt-[120px]">
-      <h3 className="text-md text-[#221815]">Gallery</h3>
+      <h3 className="text-md text-[#221815] font-nothing">Gallery</h3>
       <div className="mb-[60px] mt-[27px] h-[1px] w-[10px] bg-[#221815]" />
       <div className="grid grid-cols-2 gap-2">
         {isOpen && (

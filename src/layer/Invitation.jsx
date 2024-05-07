@@ -1,8 +1,10 @@
 export const Invitation = () => {
   return (
     <div className="mt-[70px] bg-[url('/bg_greeting.png')] py-[63px]">
-      <div className="mb-[50px] text-center font-bold">INVITATION</div>
-      <div className="flex flex-col items-center justify-center gap-[20px] text-center">
+      <div className="mb-[50px] text-center font-bold font-cinzel">
+        INVITATION
+      </div>
+      <div className="flex flex-col items-center justify-center gap-[20px] text-center font-crimson">
         <p>This day I married my best friend.</p>
         <p>The one I laugh with as</p>
         <p>we share life&apos;s wondrous zest,</p>

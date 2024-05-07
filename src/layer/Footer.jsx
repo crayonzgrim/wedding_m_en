@@ -12,7 +12,7 @@ export const Footer = () => {
         className="flex items-center justify-center flex-col gap-1 mt-2"
       >
         <img src={"/share-url.png"} alt={"share-url"} width={20} />
-        <p>Share this link</p>
+        <p className="font-lato font-semibold text-gray-600">Share this link</p>
       </button>
     </div>
   );

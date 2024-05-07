@@ -7,7 +7,7 @@ export const Events = () => {
         <img src={"/leaf.png"} alt={"leaf"} width={13} />
       </div>
 
-      <div className="mt-[60px] text-center text-sm">
+      <div className="mt-[60px] text-center font-nothing">
         <p className="">Your presence at our wedding is</p>
         <p className="">the greatest gift of all.</p>
         <p className="">However, if you wish to give a gift,</p>
@@ -27,8 +27,8 @@ export const Events = () => {
               className={`${id === "groom" ? "rounded-bl-lg rounded-tl-lg border-2 border-r-0" : "rounded-br-lg rounded-tr-lg border-2"} border-[#FFE0D2] bg-white p-5 w-full`}
             >
               <div className="mb-4 flex flex-col items-center">
-                <p className="uppercase text-xs">{id}</p>
-                <p className="">{name}</p>
+                <p className="uppercase text-[9px] font-cinzel">{id}</p>
+                <p className="font-notoKR font-semibold">{name}</p>
               </div>
               <div className="flex items-center justify-between px-7">
                 <a href={`tel:${phone}`}>

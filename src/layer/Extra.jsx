@@ -8,11 +8,10 @@ export const Extra = () => {
           <img src={"/flower.png"} alt={"flower"} width={30} />
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-4">
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 font-nothing">
           <p>I love you for all that you are,</p>
           <p>All that you have been</p>
           <p>And all that you will be.</p>
-          {/* <p>- 이수동, &lt;사랑가&gt; -</p> */}
         </div>
       </div>
 

@@ -8,8 +8,8 @@ export const Modal = (props) => {
         <div className="relative bg-white rounded-lg shadow">
           {/* <!-- Modal header --> */}
           <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-              Wedding picture {alt.split("_")[1]}
+            <h3 className="text-xl font-semibold text-gray-900 font-nothing">
+              Gallery {`0${+alt.replace("g_", "")}`}
             </h3>
             <button
               type="button"

@@ -40,22 +40,22 @@ export const Countdown = () => {
     <div className="relative flex flex-col items-center justify-center">
       <div className="h-[7.5rem] w-full bg-[url('/bg_timer.png')] bg-contain bg-no-repeat">
         <div className="absolute left-0 top-9 flex w-full items-center justify-center gap-4">
-          <div>
+          <div className="font-crimson">
             <p className="text-center text-2xl">{remainingTime.days}</p>
             <p className="text-center text-xs">Days</p>
           </div>
           <p className="text-xl">:</p>
-          <div>
+          <div className="font-crimson">
             <p className="text-center text-2xl">{remainingTime.hours}</p>
             <p className="text-center text-xs">Hours</p>
           </div>
           <p>:</p>
-          <div>
+          <div className="font-crimson">
             <p className="text-center text-2xl">{remainingTime.minutes}</p>
             <p className="text-center text-xs">Minutes</p>
           </div>
           <p>:</p>
-          <div>
+          <div className="font-crimson">
             <p className="text-center text-2xl">{remainingTime.seconds}</p>
             <p className="text-center text-xs">Seconds</p>
           </div>
