@@ -74,9 +74,9 @@ export const Gallery = () => {
         </button>
         <button onClick={handleModal} className="focus-visible:outline-0">
           <img
-            id={"g_7"}
-            src={"/g_7.jpeg"}
-            alt={"g_7"}
+            id={"g_6"}
+            src={"/g_6.jpeg"}
+            alt={"g_6"}
             className="focus-visible:outline-0"
           />
         </button>
