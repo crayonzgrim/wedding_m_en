@@ -11,6 +11,8 @@ import {
 } from "./layer";
 
 function App() {
+  const GOOGLE_API = import.meta.env.VITE_GOOGLE_MAP_API;
+
   return (
     <div
       className={`flex items-center justify-center min-h-screen w-screen bg-[url('/bg_page.png')]`}
@@ -21,7 +23,9 @@ function App() {
         <Invitation />
         <Parents />
         <Gallery />
-        <HowToCome />
+        <div className="relative border h-[400px]">
+          <HowToCome GOOGLE_API={GOOGLE_API} />
+        </div>
         <Extra />
         <Events />
         <Footer />
