@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fromAddress, setDefaults } from "react-geocode";
 
 export const GoogleMap = () => {
@@ -12,41 +12,48 @@ export const GoogleMap = () => {
     region: "kr",
   });
 
-  useLayoutEffect(() => {
-    const container = document.createElement("div");
+  console.log(document.querySelector("#googleMap"));
 
-    container.id = "map";
-    container.style.minHeight = "50dvh";
-    container.style.minWidth = "382px";
+  useEffect(() => {
+    const exist = document.querySelector("#googleMap");
 
-    container.style.position = "absolute";
-    container.style.bottom = "-439%";
-    container.style.left = "50%";
-    container.style.transform = "translate(-50%, -50%)";
+    if (exist) {
+      const container = document.createElement("div");
 
-    container.style.zIndex = 10;
+      container.id = "map";
+      container.style.minHeight = "400px";
+      container.style.maxWidth = "382px";
+      container.style.width = "100%";
 
-    document.body.appendChild(container);
+      container.style.position = "absolute";
+      container.style.top = "244.5rem";
+      container.style.left = "50%";
+      container.style.transform = "translate(-50%, -50%)";
 
-    fromAddress("Hotel Inter-Burgo Exco")
-      .then((res) => {
-        const { lat, lng } = res.results[0].geometry.location;
+      container.style.zIndex = 10;
 
-        const instance = new window.google.maps.Map(container, {
-          center: {
-            lat,
-            lng,
-          },
-          zoom: 18,
-          mapId: "7cce787e21231f26",
-        });
+      document.body.appendChild(container);
 
-        setGoogleMap(instance);
-      })
-      .catch(console.error);
-    return () => {
-      document.body.removeChild(container);
-    };
+      fromAddress("Hotel Inter-Burgo Exco")
+        .then((res) => {
+          const { lat, lng } = res.results[0].geometry.location;
+
+          const instance = new window.google.maps.Map(container, {
+            center: {
+              lat,
+              lng,
+            },
+            zoom: 18,
+            mapId: "7cce787e21231f26",
+          });
+
+          setGoogleMap(instance);
+        })
+        .catch(console.error);
+      return () => {
+        document.body.removeChild(container);
+      };
+    }
   }, []);
 
   return <></>;

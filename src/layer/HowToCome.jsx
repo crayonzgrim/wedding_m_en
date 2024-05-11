@@ -4,9 +4,9 @@ import { GoogleMap } from "../components/GoogleMap";
 const render = (status) => {
   switch (status) {
     case Status.LOADING:
-      return "Spinner...";
+      return "Loading...";
     case Status.FAILURE:
-      return "Failed....";
+      return "Failed";
     case Status.SUCCESS:
       return <GoogleMap />;
   }

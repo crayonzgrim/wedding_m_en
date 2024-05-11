@@ -23,7 +23,7 @@ function App() {
         <Invitation />
         <Parents />
         <Gallery />
-        <div className="relative border h-[400px]">
+        <div id={"googleMap"} className="relative h-[400px]">
           <HowToCome GOOGLE_API={GOOGLE_API} />
         </div>
         <Extra />
