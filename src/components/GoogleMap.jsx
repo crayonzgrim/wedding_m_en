@@ -12,8 +12,6 @@ export const GoogleMap = () => {
     region: "kr",
   });
 
-  console.log(document.querySelector("#googleMap"));
-
   useEffect(() => {
     const exist = document.querySelector("#googleMap");
 
