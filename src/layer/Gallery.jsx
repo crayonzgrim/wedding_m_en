@@ -5,7 +5,6 @@ import { GalleryContext } from "../context/galleryContext";
 export const Gallery = () => {
   const [src, setSrc] = useState("");
   const [alt, setAlt] = useState("");
-  // const [isOpen, setIsOpen] = useState(false);
 
   const { isOpen, setIsOpen } = useContext(GalleryContext);
 

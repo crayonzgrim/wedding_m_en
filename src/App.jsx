@@ -23,20 +23,20 @@ function App() {
 
   return (
     <div
-      className={`flex items-center justify-center min-h-screen w-screen bg-[url('/bg_page.png')] relative`}
+      className={`flex items-center justify-center min-h-screen w-screen bg-[url('/bg_page.png')]`}
     >
       <GalleryContext.Provider
         value={{ isOpen, setIsOpen, handleGalleryPopup }}
       >
-        <FallingEffect />
         {isOpen ? (
           <div
-            className={`absolute top-0 left-0 ${isOpen ? "z-[35]" : "-z-[50]"} w-full h-full opacity-50 bg-black`}
+            className={`fixed top-0 left-0 ${isOpen ? "z-[35]" : "-z-[50]"} w-full h-full opacity-50 bg-black`}
             onClick={handleGalleryPopup}
           />
         ) : null}
+        <FallingEffect />
 
-        <div className="min-h-screen w-[382px] bg-[url('/bg_page.png')] relative">
+        <div className="min-h-screen w-[382px] bg-[url('/bg_page.png')]">
           <Main />
           <Invitation />
           <Parents />
