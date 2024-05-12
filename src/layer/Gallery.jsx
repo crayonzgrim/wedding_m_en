@@ -9,8 +9,6 @@ export const Gallery = () => {
 
   const { isOpen, setIsOpen } = useContext(GalleryContext);
 
-  console.log(isOpen);
-
   const handleModal = (e) => {
     setIsOpen(true);
     setSrc(e.target.src);

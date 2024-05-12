@@ -21,7 +21,6 @@ function App() {
 
   const GOOGLE_API = import.meta.env.VITE_GOOGLE_MAP_API;
 
-  console.log(isOpen);
   return (
     <div
       className={`flex items-center justify-center min-h-screen w-screen bg-[url('/bg_page.png')] relative`}
