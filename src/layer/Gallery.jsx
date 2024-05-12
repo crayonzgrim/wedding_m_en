@@ -1,10 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Modal } from "../components/Modal";
+import { GalleryContext } from "../context/galleryContext";
 
 export const Gallery = () => {
   const [src, setSrc] = useState("");
   const [alt, setAlt] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
+
+  const { isOpen, setIsOpen } = useContext(GalleryContext);
+
+  console.log(isOpen);
 
   const handleModal = (e) => {
     setIsOpen(true);
@@ -20,17 +25,17 @@ export const Gallery = () => {
     };
 
     window.addEventListener("keydown", escKeyModalClose);
-
     return () => window.removeEventListener("keydown", escKeyModalClose);
   }, []);
+
   return (
     <div className="flex flex-col items-center justify-center mt-[120px]">
       <h3 className="text-md text-[#221815] font-nothing">Gallery</h3>
       <div className="mb-[60px] mt-[27px] h-[1px] w-[10px] bg-[#221815]" />
       <div className="grid grid-cols-2 gap-2">
-        {isOpen && (
+        {isOpen ? (
           <Modal src={src} alt={alt} onClose={() => setIsOpen(false)} />
-        )}
+        ) : null}
 
         <button onClick={handleModal} className="focus-visible:outline-0">
           <img

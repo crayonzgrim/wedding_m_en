@@ -1,10 +1,7 @@
-// Dancing Script font
-// Satisfy font
-
 export const Parents = () => {
   return (
     <div>
-      <img src={"./pic_3.jpeg"} alt={"pic_3"} />
+      <img src={"./pic_4.png"} alt={"pic_4"} />
 
       <div className="flex min-h-[170px] flex-col items-center justify-center gap-2 bg-[url('/bg_greeting.png')]">
         <p className="font-bold text-sm font-montserrat mb-3">
