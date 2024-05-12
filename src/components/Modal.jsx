@@ -2,10 +2,7 @@ export const Modal = (props) => {
   const { src, alt, onClose } = props;
 
   return (
-    <div
-      className="overflow-y-auto overflow-x-hidden fixed top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] justify-center items-center w-full max-w-[385px] z-[45]"
-      style={{ border: "1px dashed red" }}
-    >
+    <div className="overflow-y-auto overflow-x-hidden fixed top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] justify-center items-center w-full max-w-[385px] z-[45]">
       <div className="relative w-full max-w-2xl max-h-full">
         {/* <!-- Modal content --> */}
         <div className="relative bg-white rounded-lg shadow">
